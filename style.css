@@ -1,1 +1,89 @@
 
+/* Style général */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0b0d12;
+    color: #f0f0f0;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1f2e, #14171f);
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #c7d3ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #89a4ff;
+}
+
+/* Mise en page des sections */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* Effet lumineux */
+.title-glow {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e9edff;
+    text-shadow: 0 0 15px #5c6cff, 0 0 30px #818bff;
+}
+
+/* Galerie */
+.gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(134, 150, 255, 0.3);
+    transition: transform .25s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulaire */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1b1f2c;
+    color: #fff;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #5568ff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6e7bff;
+}
